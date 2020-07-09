@@ -23,9 +23,15 @@ const Main = () => {
           </div>
 
           <div className="icons" css={iconsGrid}>
-            <img src={githubIcon} alt="GitHub Icon" />
-            <img src={emailIcon} alt="E-mail Icon" />
-            <img src={freeCodeCampIcon} alt="FreeCodeCamp Icon" />
+            <a href="https://github.com/victorgom3s">
+              <img src={githubIcon} alt="GitHub Icon" />
+            </a>
+            <a href="mailto: vsampaio@pm.me">
+              <img src={emailIcon} alt="E-mail Icon" />
+            </a>
+            <a href="https://www.freecodecamp.org/victorgom3s">
+              <img src={freeCodeCampIcon} alt="FreeCodeCamp Icon" />
+            </a>
           </div>
         </div>
       </Container>
@@ -53,8 +59,16 @@ const mainStyle = css`
 const iconsGrid = css`
   margin: 0 auto;
   display: flex;
-  img {
-    margin: 30px 10px;
+  a {
+    margin: 0;
+    padding: 0;
+    img {
+      margin: 30px 10px;
+      transition: 0.2s;
+      &:hover {
+        scale: 1.1;
+      }
+    }
   }
 `;
 

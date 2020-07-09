@@ -20,6 +20,10 @@ const Header = () => {
             className="logo"
             css={css`
               margin: 0 auto;
+              transition: 0.2s;
+              &:hover {
+                scale: 1.05;
+              }
               @media (min-width: 1200px) {
                 margin: 0;
               }

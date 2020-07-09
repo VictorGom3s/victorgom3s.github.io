@@ -10,7 +10,7 @@ const Container = ({ children }) => {
         margin: 0 auto;
         color: white;
         height: 100%;
-        @media (max-width: 720px) {
+        @media (max-width: 1000px) {
           max-width: calc(100vw - 10%);
         }
       `}

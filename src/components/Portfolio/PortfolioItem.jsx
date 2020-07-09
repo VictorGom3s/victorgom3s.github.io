@@ -1,5 +1,6 @@
 import React from "react";
 import { css } from "@emotion/core";
+import { primary, secondary, auxiliary } from "../../colors";
 
 const PortfolioItem = ({
   title,
@@ -10,13 +11,19 @@ const PortfolioItem = ({
   reversed,
 }) => {
   return (
-    <div css={styleItem}>
-      <img src={img} alt="Imagem do projeto" />
-      <h3 css={titleStyle}>{title}</h3>
-      <p css={textStyle}>{text}</p>
-      <div className="links" css={links}>
-        <a href={linkAcessar || "#"}>Acessar</a>
-        <a href={linkCodigo || "#"}>Ver código fonte</a>
+    <div css={reversed ? styleItemReverse : styleItem}>
+      <img src={img} alt="Imagem do projeto" css={imgStyle} />
+      <div className="description" css={descriptionStyle}>
+        <h3 css={titleStyle}>{title}</h3>
+        <p css={textStyle}>{text}</p>
+        <div className="links" css={links}>
+          <a href={linkAcessar || "#"} className="linkAcessar">
+            Acessar
+          </a>
+          <a href={linkCodigo || "#"} className="linkCodigoFonte">
+            Ver código fonte
+          </a>
+        </div>
       </div>
     </div>
   );
@@ -26,13 +33,71 @@ const styleItem = css`
   width: 100%;
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
+  margin: 50px auto;
+  @media (min-width: 900px) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+`;
+
+const styleItemReverse = css`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 50px auto;
+  @media (min-width: 900px) {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+`;
+
+const descriptionStyle = css`
+  display: flex;
+  flex-direction: column;
+  margin: 0 20px;
 `;
 
 const links = css`
   width: 100%;
   display: flex;
   justify-content: space-between;
+  a {
+    position: relative;
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: -5px;
+      left: 18%;
+      width: 60%;
+      height: 1px;
+    }
+  }
+  .linkAcessar {
+    color: ${primary};
+    transition: 0.2s;
+    &:after {
+      background: ${primary};
+    }
+    &:hover {
+      color: ${auxiliary};
+      &:after {
+        background: ${auxiliary};
+      }
+    }
+  }
+  .linkCodigoFonte {
+    color: ${secondary};
+    transition: 0.2s;
+    &:after {
+      background: ${secondary};
+    }
+    &:hover {
+      color: ${auxiliary};
+      &:after {
+        background: ${auxiliary};
+      }
+    }
+  }
 `;
 
 const titleStyle = css`
@@ -50,7 +115,19 @@ const titleStyle = css`
 `;
 
 const textStyle = css`
-  margin: 10px 0;
+  margin: 20px 0;
+`;
+
+const imgStyle = css`
+  width: 100%;
+  @media (min-width: 900px) {
+    margin: 0 25px;
+    width: 65%;
+  }
+  @media (min-width: 1200px) {
+    margin: 0 25px;
+    width: 60%;
+  }
 `;
 
 export default PortfolioItem;
