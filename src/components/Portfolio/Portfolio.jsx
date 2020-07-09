@@ -14,7 +14,7 @@ const Portfolio = () => {
     <section css={sectionStyle}>
       <Container>
         <div className="portfolio">
-          <h2 className="closingTags">Portfolio</h2>
+          <h2 className="closingTags titleH2">Portfolio</h2>
           <div className="itens">
             <PortfolioItem
               title={"Leitura Orgânica"}

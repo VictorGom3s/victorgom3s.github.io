@@ -6,6 +6,7 @@ import Container from "./Container";
 import * as githubIcon from "../images/eva_github-outline.svg";
 import * as freeCodeCampIcon from "../images/cib_freecodecamp.svg";
 import * as emailIcon from "../images/ic_baseline-alternate-email.svg";
+import * as illustration from "../images/undraw_programming_2svr.svg";
 import { background, secondary, primary } from "../colors";
 
 const Main = () => {
@@ -13,13 +14,24 @@ const Main = () => {
     <section id="main" css={sectionStyle}>
       <Container>
         <div className="main" css={mainStyle}>
-          <div className="textContainer" css={textContainerStyle}>
-            <h4 css={h4Style}>
-              Olá, meu nome é <b css={boldText}>Victor Gomes</b>
-            </h4>
-            <h1 css={h1Style}>
-              Eu sou um <b>Desenvolvedor Web</b>
-            </h1>
+          <div css={textWrapper}>
+            <div className="textContainer" css={textContainerStyle}>
+              <h4 css={h4Style}>
+                Olá, meu nome é <b css={boldText}>Victor Gomes</b>
+              </h4>
+              <h1 css={h1Style}>
+                Eu sou um <b>Desenvolvedor Web</b>
+              </h1>
+              <div className="buttons" css={buttons}>
+                <button className="btn btn-primary">Quero Contratar</button>
+                <button className="btn btn-secondary">
+                  Preciso de um Site
+                </button>
+              </div>
+            </div>
+            <div className="illustration" css={illustrationStyle}>
+              <img src={illustration} alt="Illustration" />
+            </div>
           </div>
 
           <div className="icons" css={iconsGrid}>
@@ -38,6 +50,22 @@ const Main = () => {
     </section>
   );
 };
+
+const buttons = css`
+  display: flex;
+  justify-content: space-between;
+  @media (min-width: 900px) {
+    justify-content: flex-start;
+  }
+  align-items: center;
+  align-content: center;
+  .btn-primary {
+    margin: 30px 10px 0px 0px;
+  }
+  .btn-secondary {
+    margin: 30px 0px 0px 0px;
+  }
+`;
 
 const boldText = css`
   color: ${primary};
@@ -72,15 +100,43 @@ const iconsGrid = css`
   }
 `;
 
+const textWrapper = css`
+  flex-grow: 1;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+`;
+
+const illustrationStyle = css`
+  display: none;
+  position: relative;
+  @media (min-width: 900px) {
+    display: flex;
+    width: 60%;
+    align-items: center;
+    img {
+      position: absolute;
+      right: -20px;
+      width: 100%;
+      margin-left: 15px;
+    }
+  }
+`;
+
 const textContainerStyle = css`
   color: ${secondary};
-  flex-grow: 1;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
   align-content: center;
   justify-content: center;
-  margin-bottom: 30px;
+  height: 100%;
+  @media (min-width: 900px) {
+    width: 40%;
+    z-index: 1;
+  }
 `;
 
 const h4Style = css`

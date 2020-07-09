@@ -17,11 +17,11 @@ const PortfolioItem = ({
         <h3 css={titleStyle}>{title}</h3>
         <p css={textStyle}>{text}</p>
         <div className="links" css={links}>
-          <a href={linkAcessar || "#"} className="linkAcessar">
-            Acessar
-          </a>
           <a href={linkCodigo || "#"} className="linkCodigoFonte">
             Ver código fonte
+          </a>
+          <a href={linkAcessar || "#"} className="linkAcessar">
+            Acessar
           </a>
         </div>
       </div>

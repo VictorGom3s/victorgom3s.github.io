@@ -10,9 +10,9 @@ const CodeEditor = () => {
   return (
     <div css={style}>
       <div className="buttons">
-        <div className="btn"></div>
-        <div className="btn"></div>
-        <div className="btn"></div>
+        <div className="btn-editor"></div>
+        <div className="btn-editor"></div>
+        <div className="btn-editor"></div>
       </div>
       <div className="code">
         <SyntaxHighlighter
@@ -83,7 +83,7 @@ const style = css`
     margin: 0px 15px;
   }
 
-  .buttons .btn {
+  .buttons .btn-editor {
     height: 14px;
     width: 14px;
     margin: 0px 5px;

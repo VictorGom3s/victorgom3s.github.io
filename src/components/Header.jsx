@@ -24,7 +24,7 @@ const Header = () => {
               &:hover {
                 scale: 1.05;
               }
-              @media (min-width: 1200px) {
+              @media (min-width: 900px) {
                 margin: 0;
               }
             `}
