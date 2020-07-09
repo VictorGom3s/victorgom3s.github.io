@@ -1,0 +1,21 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.closingTags {
+  position: relative;
+}
+
+.closingTags::after {
+  content: " />";
+  position: absolute;
+  padding-left: 5px;
+}
