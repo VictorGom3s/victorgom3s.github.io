@@ -5,8 +5,11 @@ import { secondary } from "../colors";
 const Footer = () => {
   return (
     <footer css={footerStyle}>
-      Desenvolvido com 💗 por{" "}
-      <a href="https://github.com/victorgom3s">VictorGom3s</a>
+      Desenvolvido com{" "}
+      <span role="img" aria-label="heart emoji">
+        💗
+      </span>{" "}
+      por <a href="https://github.com/victorgom3s">VictorGom3s</a>
     </footer>
   );
 };

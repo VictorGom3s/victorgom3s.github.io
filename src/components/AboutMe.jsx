@@ -1,7 +1,7 @@
 import React from "react";
 import { css } from "@emotion/core";
 
-import { secondary, backgroundDarken } from "../colors";
+import { backgroundDarken } from "../colors";
 import CodeEditor from "./CodeEditor";
 import Container from "./Container";
 

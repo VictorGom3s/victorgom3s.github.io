@@ -21,10 +21,16 @@ const PortfolioItem = ({
             href={linkCodigo || "#"}
             className="linkCodigoFonte"
             target="_blank"
+            rel="noopener noreferrer"
           >
             Ver código fonte
           </a>
-          <a href={linkAcessar || "#"} className="linkAcessar" target="_blank">
+          <a
+            href={linkAcessar || "#"}
+            className="linkAcessar"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Acessar
           </a>
         </div>
