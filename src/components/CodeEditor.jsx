@@ -21,6 +21,7 @@ const CodeEditor = () => {
             background: "none",
             overflow: "visible",
             whiteSpace: "pre-wrap",
+            userSelect: "none",
           }}
           language="javascript"
         >

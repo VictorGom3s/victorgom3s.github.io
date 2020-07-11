@@ -1,5 +1,26 @@
+@font-face {
+  font-family: "Roboto Condensed";
+  src: url("../resources/fonts/RobotoCondensed-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto Mono";
+  src: url("../resources/fonts/RobotoMono-VariableFont_wght.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto Condensed Bold";
+  src: url("../resources/fonts/RobotoCondensed-Bold.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
 html,
 body {
+  scroll-behavior: smooth;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -8,6 +29,26 @@ body {
 a {
   color: white;
   text-decoration: none;
+}
+
+b {
+  font-family: "Roboto Condensed Bold", sans;
+}
+
+h1,
+h4 {
+  font-family: "Roboto Condensed", sans;
+}
+
+h2,
+h3,
+h5,
+h6,
+a,
+p,
+button,
+code {
+  font-family: "Roboto Mono", monospace;
 }
 
 .closingTags {
@@ -28,10 +69,17 @@ a {
 }
 
 .btn {
-  font-size: 0.875rem;
-  padding: 15px 20px;
+  font-size: 0.75rem;
   border: none;
   cursor: pointer;
+  padding: 13px 18px;
+}
+
+@media (min-width: 1400px) {
+  .btn {
+    padding: 15px 20px;
+    font-size: 0.875rem;
+  }
 }
 
 .btn-primary {

@@ -1,7 +1,7 @@
 import React from "react";
 
 import { css } from "@emotion/core";
-import { background, secondary } from "../colors";
+import { background, secondary, primary } from "../colors";
 import Container from "./Container";
 
 import * as logo from "../images/LOGO.svg";
@@ -32,9 +32,9 @@ const Header = () => {
             <img src={logo} alt="victorgom3s logo" />
           </div>
           <div className="links" css={linksStyle}>
-            <a href="#">Sobre Mim</a>
-            <a href="#">Portfolio</a>
-            <a href="#">Contato</a>
+            <a href="#aboutMe">Sobre Mim</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contato">Contato</a>
           </div>
         </nav>
       </Container>
@@ -57,17 +57,27 @@ const linksStyle = css`
   display: none;
   justify-content: space-evenly;
   width: 50%;
-  @media (min-width: 900px) {
-    display: flex;
-  }
   a {
     position: relative;
+    margin: 0 15px;
+    transition: 0.2s;
     &:after {
       content: " />";
       color: ${secondary};
       position: absolute;
       padding-left: 5px;
     }
+    &:hover {
+      color: ${primary};
+      scale: 1.05;
+      &:after {
+        color: ${primary};
+      }
+    }
+  }
+
+  @media (min-width: 900px) {
+    display: flex;
   }
 `;
 

@@ -117,10 +117,17 @@ const illustrationStyle = css`
     width: 60%;
     align-items: center;
     img {
+      scale: 1.025;
       position: absolute;
-      right: -20px;
+      right: -35px;
       width: 100%;
-      margin-left: 15px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    img {
+      scale: 1.25;
+      right: -75px;
     }
   }
 `;
@@ -134,7 +141,7 @@ const textContainerStyle = css`
   justify-content: center;
   height: 100%;
   @media (min-width: 900px) {
-    width: 40%;
+    width: 45%;
     z-index: 1;
   }
 `;
@@ -143,12 +150,24 @@ const h4Style = css`
   font-weight: normal;
   margin: 5px 0;
   font-size: 1.125rem;
+  @media (min-width: 1100px) {
+    font-size: 1.9rem;
+  }
+  @media (min-width: 1600px) {
+    font-size: 2.1rem;
+  }
 `;
 
 const h1Style = css`
   font-weight: normal;
   margin: 5px 0;
   font-size: 2.25rem;
+  @media (min-width: 1100px) {
+    font-size: 3rem;
+  }
+  @media (min-width: 1600px) {
+    font-size: 4rem;
+  }
 `;
 
 export default Main;

@@ -1,14 +1,13 @@
 import React from "react";
 import { css } from "@emotion/core";
-import Container from "./Container";
 import { backgroundDarken, background } from "../colors";
 
 const EnviarEmail = () => {
   return (
     <>
       <form css={formStyle}>
-        <input type="text" placeholder="Assunto" />
-        <input type="email" placeholder="Seu e-mail" />
+        <input type="text" placeholder="Assunto" disabled />
+        <input type="email" placeholder="Seu e-mail" disabled />
         <button className="btn btn-primary" disabled>
           Enviar
         </button>

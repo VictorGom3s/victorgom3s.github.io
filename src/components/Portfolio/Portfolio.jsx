@@ -11,7 +11,7 @@ import * as desafio333 from "../../images/desafio333.png";
 
 const Portfolio = () => {
   return (
-    <section css={sectionStyle}>
+    <section id="portfolio" css={sectionStyle}>
       <Container>
         <div className="portfolio">
           <h2 className="closingTags titleH2">Portfolio</h2>
@@ -19,29 +19,33 @@ const Portfolio = () => {
             <PortfolioItem
               title={"Leitura Orgânica"}
               text={
-                "Esse foi um baita de um projeto que eu fiz. Tenho muito orgulho dele"
+                "Landing Page e Teste de leitura para o curso Leitura Orgânica. Desenvolvido com HTML5, CSS3, SASS, JavaScript Vanilla e Parcel como bundler. A UI foi desenvolvida por mim através do Figma e as ilustrações foram retiradas de bibliotecas open-source."
               }
-              linkAcessar={"teste.com"}
-              linkCodigo={"github.com/victorgom3s"}
+              linkAcessar={"https://desafio333-leitura-organica.herokuapp.com/"}
+              linkCodigo={
+                "https://github.com/VictorGom3s/leitura-organica-desafio333"
+              }
               img={desafio333}
             />
             <PortfolioItem
               title={"Just Another Task Manager"}
               text={
-                "Esse foi um baita de um projeto que eu fiz. Tenho muito orgulho dele"
+                "Lista de tarefas e Pomodoro Timer. Desenvolvido em ReactJS. Foram utilizados Dexie.js para armazenar os tarefas no indexedDB do Browser, e SASS como pré-processador CSS."
               }
-              linkAcessar={"teste.com"}
-              linkCodigo={"github.com/victorgom3s"}
+              linkAcessar={"https://justanothertaskmanager.herokuapp.com/"}
+              linkCodigo={
+                "https://github.com/VictorGom3s/JustAnotherTaskManager"
+              }
               img={JATM}
               reversed={true}
             />
             <PortfolioItem
               title={"Memory Game"}
               text={
-                "Esse foi um baita de um projeto que eu fiz. Tenho muito orgulho dele"
+                "Jogo da memória temático utilizando apenas HTML, CSS e JavaScript. Criado a partir de um tutorial do FreeCodeCamp."
               }
-              linkAcessar={"teste.com"}
-              linkCodigo={"github.com/victorgom3s"}
+              linkAcessar={"https://victorgom3s.github.io/linuxmemorygame/"}
+              linkCodigo={"https://github.com/VictorGom3s/linuxmemorygame"}
               img={LMG}
             />
           </div>

@@ -17,10 +17,14 @@ const PortfolioItem = ({
         <h3 css={titleStyle}>{title}</h3>
         <p css={textStyle}>{text}</p>
         <div className="links" css={links}>
-          <a href={linkCodigo || "#"} className="linkCodigoFonte">
+          <a
+            href={linkCodigo || "#"}
+            className="linkCodigoFonte"
+            target="_blank"
+          >
             Ver código fonte
           </a>
-          <a href={linkAcessar || "#"} className="linkAcessar">
+          <a href={linkAcessar || "#"} className="linkAcessar" target="_blank">
             Acessar
           </a>
         </div>
@@ -55,6 +59,7 @@ const descriptionStyle = css`
   display: flex;
   flex-direction: column;
   margin: 0 20px;
+  max-width: 40%;
 `;
 
 const links = css`
