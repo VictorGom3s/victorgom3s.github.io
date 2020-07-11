@@ -65,7 +65,9 @@ const descriptionStyle = css`
   display: flex;
   flex-direction: column;
   margin: 0 20px;
-  max-width: 40%;
+  @media (min-width: 900px) {
+    max-width: 40%;
+  }
 `;
 
 const links = css`

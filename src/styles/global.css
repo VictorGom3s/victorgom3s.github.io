@@ -3,12 +3,14 @@
   src: url("../resources/fonts/RobotoCondensed-Regular.ttf");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 @font-face {
   font-family: "Roboto Mono";
   src: url("../resources/fonts/RobotoMono-VariableFont_wght.ttf");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -16,6 +18,7 @@
   src: url("../resources/fonts/RobotoCondensed-Bold.ttf");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 html,
