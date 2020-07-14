@@ -52,7 +52,7 @@ const Main = () => {
 };
 
 const buttons = css`
-  display: flex;
+  display: none;
   justify-content: space-between;
   @media (min-width: 900px) {
     justify-content: flex-start;

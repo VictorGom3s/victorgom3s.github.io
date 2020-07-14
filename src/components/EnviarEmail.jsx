@@ -6,10 +6,10 @@ const EnviarEmail = () => {
   return (
     <>
       <form css={formStyle}>
-        <input type="text" placeholder="Assunto" disabled />
-        <input type="email" placeholder="Seu e-mail" disabled />
-        <button className="btn btn-primary" disabled>
-          Enviar
+        <input type="text" name="assunto" placeholder="Assunto" disabled />
+        <input type="email" name="email" placeholder="Seu e-mail" disabled />
+        <button className="btn btn-primary" type="submit" disabled>
+          <span>Enviar</span>
         </button>
       </form>
     </>
