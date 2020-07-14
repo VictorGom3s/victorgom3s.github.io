@@ -117,16 +117,16 @@ const illustrationStyle = css`
     width: 60%;
     align-items: center;
     img {
-      scale: 1.025;
+      transform: scale(1.025);
       position: absolute;
       right: -35px;
       width: 100%;
     }
   }
 
-  @media (min-width: 1024px) {
+  @media (min-width: 1025px) {
     img {
-      scale: 1.25;
+      transform: scale(1.25);
       right: -75px;
     }
   }
