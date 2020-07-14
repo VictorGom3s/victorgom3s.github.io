@@ -94,7 +94,7 @@ const iconsGrid = css`
       margin: 30px 10px;
       transition: 0.2s;
       &:hover {
-        scale: 1.1;
+        transform: scale(1.1);
       }
     }
   }

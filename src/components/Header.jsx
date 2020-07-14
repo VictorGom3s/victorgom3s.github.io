@@ -22,7 +22,7 @@ const Header = () => {
               margin: 0 auto;
               transition: 0.2s;
               &:hover {
-                scale: 1.05;
+                transform: scale(1.05);
               }
               @media (min-width: 900px) {
                 margin: 0;
@@ -69,7 +69,7 @@ const linksStyle = css`
     }
     &:hover {
       color: ${primary};
-      scale: 1.05;
+      transform: scale(1.05);
       &:after {
         color: ${primary};
       }
