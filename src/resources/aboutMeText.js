@@ -2,8 +2,6 @@ const text = `
   class Victor {
     constructor() {
       this.nome = "Victor Gomes Sampaio";
-      this.email = "vsampaio@pm.me";
-      this.dataNascimento = "19/08/1998";
       this.local = "Americana/SP";
     }
     
