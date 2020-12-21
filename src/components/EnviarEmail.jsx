@@ -9,7 +9,7 @@ const EnviarEmail = () => {
         <input type="text" name="assunto" placeholder="Assunto" disabled />
         <input type="email" name="email" placeholder="Seu e-mail" disabled />
         <button className="btn btn-primary" type="submit" disabled>
-          <span>Enviar</span>
+          Enviar
         </button>
       </form>
     </>
@@ -29,6 +29,9 @@ const formStyle = css`
   button {
     margin: 20px 0;
     align-self: flex-end;
+  }
+  button:disabled {
+    background-color: gray !important;
   }
 `;
 

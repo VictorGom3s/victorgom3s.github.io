@@ -48,9 +48,6 @@ const navStyle = css`
   align-items: center;
   height: 120px;
   width: 100%;
-  @media (min-width: 900px) {
-    height: 60px;
-  }
 `;
 
 const linksStyle = css`

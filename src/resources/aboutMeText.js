@@ -22,11 +22,13 @@ const text = `
     
     habilidades(){
     return
-     ["HTML", "CSS", "Sass", "JavaScript", "Node.js",
-     "Express.js", "GatsbyJS", "MongoDB", "Sequelize/Mongoose",
-     "MySQL/MariaDB", "Git/GitHub", "Linux", "React",
-     "Estruturas de Dados", "Programação Orientada a Objetos",
-     "Testes Automatizados", "Cypress"] 
+      [
+        "HTML", "CSS", "Sass", "JavaScript", "Node.js",
+        "Express.js", "GatsbyJS", "MongoDB", "Sequelize/Mongoose",
+        "MySQL/MariaDB", "Git/GitHub", "Linux", "React",
+        "Estruturas de Dados", "Programação Orientada a Objetos",
+        "Testes Automatizados", "Cypress"
+      ] 
     }
     
     idiomas(){

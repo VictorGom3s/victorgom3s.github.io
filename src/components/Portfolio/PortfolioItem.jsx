@@ -43,7 +43,7 @@ const styleItem = css`
   width: 100%;
   display: flex;
   flex-direction: column;
-  margin: 50px auto;
+  margin: 100px auto;
   @media (min-width: 900px) {
     flex-direction: row;
     justify-content: space-between;

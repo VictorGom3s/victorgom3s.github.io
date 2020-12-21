@@ -91,6 +91,14 @@ code {
   color: #f0efed;
   transition: 0.2s;
 }
+.btn-primary:disabled {
+  background: gray;
+  cursor: default;
+}
+.btn-primary:disabled:hover {
+  background: gray;
+  cursor: default;
+}
 
 .btn-primary:hover {
   background-color: #ff3cac;
