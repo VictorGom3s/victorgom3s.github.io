@@ -2,27 +2,26 @@ name: Run tests and deploy application to GitHub Pages
 
 on:
   push:
-    branches: [ integration ]
+    branches: [integration]
   pull_request:
-    branches: [ integration ]
+    branches: [integration]
 
-jobs:  
+jobs:
   release:
-    
-    runs-on: ubuntu-latest   
-        
+    runs-on: ubuntu-latest
+
     steps:
-    - uses: actions/checkout@v2
-    - name: Use Node.js 14
-      uses: actions/setup-node@v2
-      with:
-        node-version: '14'
-        
-    - name: Install dependencies
-    - run: yarn --frozen-lockfile
-    
-    - name: Run tests
-    - run: yarn test
-    
-    - name: Deploy to GitHub Pages    
-    - run: yarn deploy
+      - uses: actions/checkout@v2
+      - name: Use Node.js 14
+        uses: actions/setup-node@v2
+        with:
+          node-version: "14"
+
+      - name: Install dependencies
+      - run: yarn --frozen-lockfile
+
+      - name: Run tests
+      - run: yarn test
+
+      - name: Deploy to GitHub Pages
+      - run: yarn deploy
