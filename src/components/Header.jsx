@@ -33,7 +33,7 @@ const Header = () => {
           </div>
           <div className="links" css={linksStyle}>
             <a href="#aboutMe">Sobre Mim</a>
-            <a href="#portfolio">Portfolio</a>
+            <a href="#portfolio">Portfólio</a>
             <a href="#contato">Contato</a>
           </div>
         </nav>
