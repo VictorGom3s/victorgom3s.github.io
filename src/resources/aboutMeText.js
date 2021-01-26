@@ -2,7 +2,7 @@ const text = `
   class Victor {
     constructor() {
       this.nome = "Victor Gomes Sampaio";
-      this.local = "Americana/SP";
+      this.local = "Americana, São Paulo";
     }
     
     formacaoAcademica(){
