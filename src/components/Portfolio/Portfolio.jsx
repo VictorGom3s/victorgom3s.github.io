@@ -7,6 +7,8 @@ import { background } from "../../colors";
 
 import * as JATM from "../../images/justanothertaskmanager.png";
 import * as LMG from "../../images/linuxMemoryGame.png";
+import * as RT from "../../images/rt-index.png";
+import * as CK from "../../images/cookies-1.png";
 import * as desafio333 from "../../images/desafio333.png";
 
 const Portfolio = () => {
@@ -32,7 +34,7 @@ const Portfolio = () => {
               text={
                 "Rolling Tetris é uma variação do jogo Tetris onde, cada vez que o player elimina uma linha que contenha uma peça especial, o tabuleiro do tetris é rotacionado, ficando de ponta cabeça. Em conjunto com o jogo, desenvolvido com HTML5 Canvas e JavaScript, desenvolvemos também uma plataforma full-stack para hospedar o jogo."
               }
-              img={LMG}
+              img={RT}
               reversed={true}
             />
             <PortfolioItem
@@ -40,7 +42,7 @@ const Portfolio = () => {
               text={
                 "Plataforma de e-commerce para um négocio de venda de Cookies. Desenvolvido em Node.js, Express, MySQL, HTML5 e CSS3."
               }
-              img={LMG}
+              img={CK}
             />
             <PortfolioItem
               title={"Just Another Task Manager"}
@@ -63,14 +65,6 @@ const Portfolio = () => {
               linkAcessar={"https://victorgom3s.github.io/linuxmemorygame/"}
               linkCodigo={"https://github.com/VictorGom3s/linuxmemorygame"}
               img={LMG}
-            />
-            <PortfolioItem
-              title={"Fórmula 1 Rest API"}
-              text={
-                "API Rest desenvolvida em Flask (Python) com dados históricos da Fórmula Um."
-              }
-              img={LMG}
-              reversed={true}
             />
           </div>
         </div>
