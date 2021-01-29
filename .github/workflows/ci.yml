@@ -4,6 +4,7 @@ on:
   push:
     branches: [main]
   pull_request:
+    types: [closed]
     branches: [main]
 
 jobs:
@@ -16,6 +17,7 @@ jobs:
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
+      if: github.event.pull_request.merged == true
       - uses: actions/checkout@v2
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v1
