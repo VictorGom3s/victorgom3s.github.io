@@ -14,7 +14,6 @@ jobs:
     strategy:
       matrix:
         node-version: [14]
-        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
       - uses: actions/checkout@v2
@@ -28,8 +27,7 @@ jobs:
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
-          if: github.event.pull_request.merged
-          with:
-            github_token: ${{ secrets.GITHUB_TOKEN }}
-            publish_dir: ./public
-            publish_branch: release
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
+          publish_branch: release
