@@ -17,22 +17,30 @@ const PortfolioItem = ({
         <h3 css={titleStyle}>{title}</h3>
         <p css={textStyle}>{text}</p>
         <div className="links" css={links}>
-          <a
-            href={linkCodigo || "#"}
-            className="linkCodigoFonte"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Ver código fonte
-          </a>
-          <a
-            href={linkAcessar || "#"}
-            className="linkAcessar"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Acessar
-          </a>
+          {linkCodigo ? (
+            <a
+              href={linkCodigo}
+              className="linkCodigoFonte"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Ver código fonte
+            </a>
+          ) : (
+            ""
+          )}
+          {linkAcessar ? (
+            <a
+              href={linkAcessar || "#"}
+              className="linkAcessar"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Acessar
+            </a>
+          ) : (
+            ""
+          )}
         </div>
       </div>
     </div>
