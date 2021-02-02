@@ -34,7 +34,7 @@ const text = `
     idiomas(){
     return [
         {"Português": "Nativo"},
-        {"Inglês": "Intermediario-avançado"}     
+        {"Inglês": "Avançado"}     
       ] 
     }
   }
