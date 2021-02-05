@@ -6,7 +6,7 @@ import Container from "./Container";
 import * as githubIcon from "../images/eva_github-outline.svg";
 import * as freeCodeCampIcon from "../images/cib_freecodecamp.svg";
 import * as emailIcon from "../images/ic_baseline-alternate-email.svg";
-import * as illustration from "../images/undraw_programming_2svr.svg";
+import * as illustration from "../images/undraw_developer_activity_bv83.svg";
 import { background, secondary, primary } from "../colors";
 
 const Main = () => {
@@ -114,7 +114,7 @@ const illustrationStyle = css`
   position: relative;
   @media (min-width: 900px) {
     display: flex;
-    width: 60%;
+    width: 50%;
     align-items: center;
     img {
       transform: scale(1.025);

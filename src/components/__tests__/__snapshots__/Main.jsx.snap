@@ -203,14 +203,14 @@ exports[`<Main/> Render correctly 1`] = `
           css={
             Object {
               "map": undefined,
-              "name": "gj3wgw",
+              "name": "8hkn9p",
               "next": undefined,
               "styles": "
   display: none;
   position: relative;
   @media (min-width: 900px) {
     display: flex;
-    width: 60%;
+    width: 50%;
     align-items: center;
     img {
       transform: scale(1.025);
