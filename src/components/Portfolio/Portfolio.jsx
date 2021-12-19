@@ -40,14 +40,14 @@ const Portfolio = () => {
             <PortfolioItem
               title={"Cookies.com.br"}
               text={
-                "Plataforma de e-commerce para um négocio de venda de Cookies. Desenvolvido em Node.js, Express, MySQL, HTML5 e CSS3."
+                "Plataforma de e-commerce para um negócio de venda de Cookies. Desenvolvido em Node.js, Express, MySQL, HTML5 e CSS3."
               }
               img={CK}
             />
             <PortfolioItem
               title={"Just Another Task Manager"}
               text={
-                "Lista de tarefas e Pomodoro Timer. Desenvolvido em ReactJS. Foram utilizados Dexie.js para armazenar os tarefas no indexedDB do Browser, e SASS como pré-processador CSS."
+                "Lista de tarefas e Pomodoro Timer. Desenvolvido em ReactJS. Foram utilizados Dexie.js para armazenar as tarefas no indexedDB do Browser, e SASS como pré-processador CSS."
               }
               linkAcessar={"https://justanothertaskmanager.herokuapp.com/"}
               linkCodigo={

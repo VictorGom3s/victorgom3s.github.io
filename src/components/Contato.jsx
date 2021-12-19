@@ -2,11 +2,11 @@ import React from "react";
 import { css } from "@emotion/core";
 
 import Container from "./Container";
-import EnviarEmail from "./EnviarEmail";
 import { backgroundDarken } from "../colors";
 import * as githubIcon from "../images/eva_github-outline.svg";
 import * as freeCodeCampIcon from "../images/cib_freecodecamp.svg";
 import * as emailIcon from "../images/ic_baseline-alternate-email.svg";
+import * as linkedinIcon from "../images/dashicons_linkedin.svg";
 
 const Contato = () => {
   return (
@@ -15,22 +15,23 @@ const Contato = () => {
         <h2 className="closingTags titleH2">Contato</h2>
         <div className="findMe" css={findMe}>
           <div className="links" css={links}>
-            <p>Onde me encontrar: </p>
             <div className="icons" css={iconsGrid}>
-              <a href="https://github.com/victorgom3s">
+              <a href="https://github.com/victorgom3s" target="_blank">
                 <img src={githubIcon} alt="GitHub Icon" />
               </a>
-              <a href="mailto: vsampaio@pm.me">
+              <a href="mailto: o7xitc6vw@mozmail.com" target="_blank">
                 <img src={emailIcon} alt="E-mail Icon" />
               </a>
-              <a href="https://www.freecodecamp.org/victorgom3s">
+              <a
+                href="https://www.freecodecamp.org/victorgom3s"
+                target="_blank"
+              >
                 <img src={freeCodeCampIcon} alt="FreeCodeCamp Icon" />
               </a>
+              <a href="https://www.linkedin.com/in/victorgom3s" target="_blank">
+                <img src={linkedinIcon} alt="LinkedIn Icon" />
+              </a>
             </div>
-          </div>
-          <div className="form" css={form}>
-            <p>Me envie um e-mail: </p>
-            <EnviarEmail />
           </div>
         </div>
       </Container>
@@ -62,6 +63,7 @@ const form = css`
 const iconsGrid = css`
   display: flex;
   justify-content: space-evenly;
+  margin: 30px auto;
   a {
     margin: 10px;
     padding: 0;
@@ -78,7 +80,7 @@ const findMe = css`
   @media (min-width: 900px) {
     display: flex;
     flex-direction: row-reverse;
-    justify-content: space-between;
+    justify-content: center;
   }
 `;
 

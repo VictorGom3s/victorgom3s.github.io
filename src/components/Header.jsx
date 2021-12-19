@@ -5,6 +5,7 @@ import { background, secondary, primary } from "../colors";
 import Container from "./Container";
 
 import * as logo from "../images/LOGO.svg";
+import { Link } from "gatsby";
 
 const Header = () => {
   return (
@@ -16,21 +17,9 @@ const Header = () => {
     >
       <Container>
         <nav css={navStyle}>
-          <div
-            className="logo"
-            css={css`
-              margin: 0 auto;
-              transition: 0.2s;
-              &:hover {
-                transform: scale(1.05);
-              }
-              @media (min-width: 900px) {
-                margin: 0;
-              }
-            `}
-          >
+          <Link to="/" className="logo" css={logoContainer}>
             <img src={logo} alt="victorgom3s logo" />
-          </div>
+          </Link>
           <div className="links" css={linksStyle}>
             <a href="#aboutMe">Sobre Mim</a>
             <a href="#portfolio">Portfólio</a>
@@ -41,6 +30,17 @@ const Header = () => {
     </header>
   );
 };
+
+const logoContainer = css`
+  margin: 0 auto;
+  transition: 0.2s;
+  &:hover {
+    transform: scale(1.05);
+  }
+  @media (min-width: 900px) {
+    margin: 0;
+  }
+`;
 
 const navStyle = css`
   display: flex;
