@@ -157,7 +157,7 @@ exports[`<Main/> Render correctly 1`] = `
           >
             Eu sou um 
             <b>
-              Desenvolvedor Web
+              Desenvolvedor de Software
             </b>
           </h1>
           <div
@@ -269,6 +269,7 @@ exports[`<Main/> Render correctly 1`] = `
       >
         <a
           href="https://github.com/victorgom3s"
+          target="_blank"
         >
           <img
             alt="GitHub Icon"
@@ -280,7 +281,8 @@ exports[`<Main/> Render correctly 1`] = `
           />
         </a>
         <a
-          href="mailto: vsampaio@pm.me"
+          href="mailto: o7xitc6vw@mozmail.com"
+          target="_blank"
         >
           <img
             alt="E-mail Icon"
@@ -293,6 +295,7 @@ exports[`<Main/> Render correctly 1`] = `
         </a>
         <a
           href="https://www.freecodecamp.org/victorgom3s"
+          target="_blank"
         >
           <img
             alt="FreeCodeCamp Icon"
