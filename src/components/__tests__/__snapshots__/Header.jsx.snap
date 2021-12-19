@@ -52,26 +52,27 @@ exports[`<Header/> Render correctly 1`] = `
         }
       }
     >
-      <div
+      <a
         className="logo"
         css={
           Object {
             "map": undefined,
-            "name": "lcrmwr",
+            "name": "11w9y1g",
             "next": undefined,
             "styles": "
-              margin: 0 auto;
-              transition: 0.2s;
-              &:hover {
-                transform: scale(1.05);
-              }
-              @media (min-width: 900px) {
-                margin: 0;
-              }
-            ",
+  margin: 0 auto;
+  transition: 0.2s;
+  &:hover {
+    transform: scale(1.05);
+  }
+  @media (min-width: 900px) {
+    margin: 0;
+  }
+",
             "toString": [Function],
           }
         }
+        href="/"
       >
         <img
           alt="victorgom3s logo"
@@ -81,7 +82,7 @@ exports[`<Header/> Render correctly 1`] = `
             }
           }
         />
-      </div>
+      </a>
       <div
         className="links"
         css={
