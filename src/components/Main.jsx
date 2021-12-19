@@ -20,7 +20,7 @@ const Main = () => {
                 Olá, meu nome é <b css={boldText}>Victor Gomes</b>
               </h4>
               <h1 css={h1Style}>
-                Eu sou um <b>Desenvolvedor Web</b>
+                Eu sou um <b>Desenvolvedor de Software</b>
               </h1>
               <div className="buttons" css={buttons}>
                 <button className="btn btn-primary">Quero Contratar</button>
@@ -35,13 +35,13 @@ const Main = () => {
           </div>
 
           <div className="icons" css={iconsGrid}>
-            <a href="https://github.com/victorgom3s">
+            <a href="https://github.com/victorgom3s" target="_blank">
               <img src={githubIcon} alt="GitHub Icon" />
             </a>
-            <a href="mailto: vsampaio@pm.me">
+            <a href="mailto: o7xitc6vw@mozmail.com" target="_blank">
               <img src={emailIcon} alt="E-mail Icon" />
             </a>
-            <a href="https://www.freecodecamp.org/victorgom3s">
+            <a href="https://www.freecodecamp.org/victorgom3s" target="_blank">
               <img src={freeCodeCampIcon} alt="FreeCodeCamp Icon" />
             </a>
           </div>

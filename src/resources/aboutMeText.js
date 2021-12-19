@@ -14,6 +14,7 @@ const text = `
     
     experienciaProfissional(){
       return [
+        { "Abr/2021 – Agora": "Desenvolvedor Full-Stack, Kyte App" },
         { "Out/2019 – Jun/2020": "Estágio em Desenvolvimento Web Back-End, Hybriun Desenvolvimento" },
         { "Nov/2018 – Abr/2019": "Estágio em Desenvolvimento Web Full-Stack, Tráfego Soluções Integradas" },
         { "Ago/2016 – Dez/2017": "Auxiliar Administrativo Aprendiz, FAM – Faculdade de Americana" }      
@@ -21,18 +22,18 @@ const text = `
     }
     
     habilidades(){
-    return
-      [
-        "HTML", "CSS", "Sass", "JavaScript", "Node.js",
-        "Express.js", "TypeScript", "MongoDB", "Sequelize/Mongoose",
-        "MySQL/MariaDB", "Git/GitHub", "Linux", "React",
-        "Estruturas de Dados", "Programação Orientada a Objetos",
-        "Testes Automatizados", "Cypress"
-      ] 
+      return
+        [
+          "HTML", "CSS", "Sass", "JavaScript", "Node.js",
+          "Express.js", "TypeScript", "MongoDB", "Sequelize/Mongoose",
+          "MySQL/MariaDB", "Git/GitHub", "Linux", "React", "React Native",
+          "Estruturas de Dados", "Programação Orientada a Objetos",
+          "Testes Automatizados", "Cypress"
+        ] 
     }
     
     idiomas(){
-    return [
+      return [
         {"Português": "Nativo"},
         {"Inglês": "Avançado"}     
       ] 
