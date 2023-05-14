@@ -1,12 +1,12 @@
 import React from "react";
-import { css } from "@emotion/core";
+import { css } from "@emotion/react";
 
 import Container from "./Container";
 
-import * as githubIcon from "../images/eva_github-outline.svg";
-import * as freeCodeCampIcon from "../images/cib_freecodecamp.svg";
-import * as emailIcon from "../images/ic_baseline-alternate-email.svg";
-import * as illustration from "../images/undraw_developer_activity_bv83.svg";
+import githubIcon from "../../static/images/eva_github-outline.svg";
+import freeCodeCampIcon from "../../static/images/cib_freecodecamp.svg";
+import emailIcon from "../../static/images/ic_baseline-alternate-email.svg";
+import illustration from "../../static/images/undraw_developer_activity_bv83.svg";
 import { background, secondary, primary } from "../colors";
 
 const Main = () => {
@@ -35,13 +35,25 @@ const Main = () => {
           </div>
 
           <div className="icons" css={iconsGrid}>
-            <a href="https://github.com/victorgom3s" target="_blank">
+            <a
+              href="https://github.com/victorgom3s"
+              target="_blank"
+              rel="noreferrer"
+            >
               <img src={githubIcon} alt="GitHub Icon" />
             </a>
-            <a href="mailto: o7xitc6vw@mozmail.com" target="_blank">
+            <a
+              href="mailto: o7xitc6vw@mozmail.com"
+              target="_blank"
+              rel="noreferrer"
+            >
               <img src={emailIcon} alt="E-mail Icon" />
             </a>
-            <a href="https://www.freecodecamp.org/victorgom3s" target="_blank">
+            <a
+              href="https://www.freecodecamp.org/victorgom3s"
+              target="_blank"
+              rel="noreferrer"
+            >
               <img src={freeCodeCampIcon} alt="FreeCodeCamp Icon" />
             </a>
           </div>

@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import { css } from "@emotion/core";
+import { css } from "@emotion/react";
 import { backgroundDarken, background } from "../colors";
 import Swal from "sweetalert2";
 
