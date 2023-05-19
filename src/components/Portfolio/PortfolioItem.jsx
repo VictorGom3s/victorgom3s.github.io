@@ -1,5 +1,5 @@
 import React from "react";
-import { css } from "@emotion/core";
+import { css } from "@emotion/react";
 import { primary, secondary, auxiliary } from "../../colors";
 
 const PortfolioItem = ({
@@ -22,7 +22,7 @@ const PortfolioItem = ({
               href={linkCodigo}
               className="linkCodigoFonte"
               target="_blank"
-              rel="noopener noreferrer"
+              rel="noreferrer"
             >
               Ver código fonte
             </a>
@@ -34,7 +34,7 @@ const PortfolioItem = ({
               href={linkAcessar || "#"}
               className="linkAcessar"
               target="_blank"
-              rel="noopener noreferrer"
+              rel="noreferrer"
             >
               Acessar
             </a>

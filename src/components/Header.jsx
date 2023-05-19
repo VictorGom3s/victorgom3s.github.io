@@ -1,11 +1,10 @@
 import React from "react";
 
-import { css } from "@emotion/core";
-import { background, secondary, primary } from "../colors";
-import Container from "./Container";
-
-import * as logo from "../images/LOGO.svg";
+import { css } from "@emotion/react";
 import { Link } from "gatsby";
+import { background, primary, secondary } from "../colors";
+import logo from "../../static/images/LOGO.svg";
+import Container from "./Container";
 
 const Header = () => {
   return (
