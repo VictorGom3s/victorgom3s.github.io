@@ -3,7 +3,7 @@
 exports[`<Main/> Render correctly 1`] = `
 <section
   css={
-    Object {
+    {
       "map": undefined,
       "name": "ebns4v",
       "next": undefined,
@@ -19,7 +19,7 @@ exports[`<Main/> Render correctly 1`] = `
   <div
     className="container"
     css={
-      Object {
+      {
         "map": undefined,
         "name": "1wzd80i",
         "next": undefined,
@@ -39,7 +39,7 @@ exports[`<Main/> Render correctly 1`] = `
     <div
       className="main"
       css={
-        Object {
+        {
           "map": undefined,
           "name": "1m0dqp6",
           "next": undefined,
@@ -56,7 +56,7 @@ exports[`<Main/> Render correctly 1`] = `
     >
       <div
         css={
-          Object {
+          {
             "map": undefined,
             "name": "1jhs4jv",
             "next": undefined,
@@ -75,7 +75,7 @@ exports[`<Main/> Render correctly 1`] = `
         <div
           className="textContainer"
           css={
-            Object {
+            {
               "map": undefined,
               "name": "hrjkbi",
               "next": undefined,
@@ -98,7 +98,7 @@ exports[`<Main/> Render correctly 1`] = `
         >
           <h4
             css={
-              Object {
+              {
                 "map": undefined,
                 "name": "1fsliq8",
                 "next": undefined,
@@ -120,7 +120,7 @@ exports[`<Main/> Render correctly 1`] = `
             Olá, meu nome é 
             <b
               css={
-                Object {
+                {
                   "map": undefined,
                   "name": "f517g3",
                   "next": undefined,
@@ -136,7 +136,7 @@ exports[`<Main/> Render correctly 1`] = `
           </h4>
           <h1
             css={
-              Object {
+              {
                 "map": undefined,
                 "name": "rjoxjd",
                 "next": undefined,
@@ -163,7 +163,7 @@ exports[`<Main/> Render correctly 1`] = `
           <div
             className="buttons"
             css={
-              Object {
+              {
                 "map": undefined,
                 "name": "6l0zp8",
                 "next": undefined,
@@ -201,7 +201,7 @@ exports[`<Main/> Render correctly 1`] = `
         <div
           className="illustration"
           css={
-            Object {
+            {
               "map": undefined,
               "name": "8hkn9p",
               "next": undefined,
@@ -233,18 +233,14 @@ exports[`<Main/> Render correctly 1`] = `
         >
           <img
             alt="Illustration"
-            src={
-              Object {
-                "default": "test-file-stub",
-              }
-            }
+            src="test-file-stub"
           />
         </div>
       </div>
       <div
         className="icons"
         css={
-          Object {
+          {
             "map": undefined,
             "name": "16riqf4",
             "next": undefined,
@@ -269,41 +265,32 @@ exports[`<Main/> Render correctly 1`] = `
       >
         <a
           href="https://github.com/victorgom3s"
+          rel="noreferrer"
           target="_blank"
         >
           <img
             alt="GitHub Icon"
-            src={
-              Object {
-                "default": "test-file-stub",
-              }
-            }
+            src="test-file-stub"
           />
         </a>
         <a
           href="mailto: o7xitc6vw@mozmail.com"
+          rel="noreferrer"
           target="_blank"
         >
           <img
             alt="E-mail Icon"
-            src={
-              Object {
-                "default": "test-file-stub",
-              }
-            }
+            src="test-file-stub"
           />
         </a>
         <a
           href="https://www.freecodecamp.org/victorgom3s"
+          rel="noreferrer"
           target="_blank"
         >
           <img
             alt="FreeCodeCamp Icon"
-            src={
-              Object {
-                "default": "test-file-stub",
-              }
-            }
+            src="test-file-stub"
           />
         </a>
       </div>
