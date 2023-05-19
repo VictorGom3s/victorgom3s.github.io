@@ -1,15 +1,15 @@
 import React from "react";
-import { css } from "@emotion/core";
+import { css } from "@emotion/react";
 
 import Container from "../Container";
 import PortfolioItem from "./PortfolioItem.jsx";
 import { background } from "../../colors";
 
-import * as JATM from "../../images/justanothertaskmanager.png";
-import * as LMG from "../../images/linuxMemoryGame.png";
-import * as RT from "../../images/rt-index.png";
-import * as CK from "../../images/cookies-1.png";
-import * as desafio333 from "../../images/desafio333.png";
+import JATM from "../../../static/images/justanothertaskmanager.png";
+import LMG from "../../../static/images/linuxMemoryGame.png";
+import RT from "../../../static/images/rt-index.png";
+import CK from "../../../static/images/cookies-1.png";
+import desafio333 from "../../../static/images/desafio333.png";
 
 const Portfolio = () => {
   return (
@@ -35,6 +35,7 @@ const Portfolio = () => {
                 "Rolling Tetris é uma variação do jogo Tetris onde, cada vez que o player elimina uma linha que contenha uma peça especial, o tabuleiro do tetris é rotacionado, ficando de ponta cabeça. Em conjunto com o jogo, desenvolvido com HTML5 Canvas e JavaScript, desenvolvemos também uma plataforma full-stack para hospedar o jogo."
               }
               img={RT}
+              linkCodigo={"https://github.com/VictorGom3s/rolling-tetris"}
               reversed={true}
             />
             <PortfolioItem

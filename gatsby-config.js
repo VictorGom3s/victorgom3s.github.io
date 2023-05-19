@@ -18,12 +18,13 @@ module.exports = {
     siteUrl: "https://victorgom3s.github.io/",
   },
   plugins: [
+    `gatsby-plugin-image`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/images`,
+        path: `${__dirname}/static/images`,
       },
     },
     `gatsby-transformer-sharp`,
@@ -37,12 +38,13 @@ module.exports = {
         background_color: `#2F2519`,
         theme_color: `#2F2519`,
         display: `standalone`,
-        icon: `src/images/logo-icon-1.svg`, // This path is relative to the root of the site.
+        icon: `static/images/logo-icon-1.svg`, // This path is relative to the root of the site.
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
-    `gatsby-plugin-offline`,
+    // `gatsby-plugin-offline`,
     `gatsby-plugin-emotion`,
+    `gatsby-plugin-pnpm`,
   ],
 };
