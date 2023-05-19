@@ -3,7 +3,7 @@
 exports[`<Header/> Render correctly 1`] = `
 <header
   css={
-    Object {
+    {
       "map": undefined,
       "name": "1wbp2vb",
       "next": undefined,
@@ -18,7 +18,7 @@ exports[`<Header/> Render correctly 1`] = `
   <div
     className="container"
     css={
-      Object {
+      {
         "map": undefined,
         "name": "1wzd80i",
         "next": undefined,
@@ -37,7 +37,7 @@ exports[`<Header/> Render correctly 1`] = `
   >
     <nav
       css={
-        Object {
+        {
           "map": undefined,
           "name": "1iegzf6",
           "next": undefined,
@@ -55,7 +55,7 @@ exports[`<Header/> Render correctly 1`] = `
       <a
         className="logo"
         css={
-          Object {
+          {
             "map": undefined,
             "name": "11w9y1g",
             "next": undefined,
@@ -76,17 +76,13 @@ exports[`<Header/> Render correctly 1`] = `
       >
         <img
           alt="victorgom3s logo"
-          src={
-            Object {
-              "default": "test-file-stub",
-            }
-          }
+          src="test-file-stub"
         />
       </a>
       <div
         className="links"
         css={
-          Object {
+          {
             "map": undefined,
             "name": "15c9sm1",
             "next": undefined,
@@ -99,7 +95,7 @@ exports[`<Header/> Render correctly 1`] = `
     margin: 0 15px;
     transition: 0.2s;
     &:after {
-      content: \\" />\\";
+      content: " />";
       color: #F0EFED;
       position: absolute;
       padding-left: 5px;
