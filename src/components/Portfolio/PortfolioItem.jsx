@@ -1,4 +1,5 @@
 import React from "react";
+import { useTranslation } from "gatsby-plugin-react-i18next";
 import { css } from "@emotion/react";
 import { primary, secondary, auxiliary } from "../../colors";
 
@@ -10,9 +11,16 @@ const PortfolioItem = ({
   linkCodigo,
   reversed,
 }) => {
+  const { t } = useTranslation();
+
+  const Strings = {
+    seeSourceCode: t("portfolio.seeSourceCode"),
+    access: t("portfolio.access"),
+  };
+
   return (
     <div css={reversed ? styleItemReverse : styleItem}>
-      <img src={img} alt="Imagem do projeto" css={imgStyle} />
+      <img src={img} alt="Project's screenshot" css={imgStyle} />
       <div className="description" css={descriptionStyle}>
         <h3 css={titleStyle}>{title}</h3>
         <p css={textStyle}>{text}</p>
@@ -24,7 +32,7 @@ const PortfolioItem = ({
               target="_blank"
               rel="noreferrer"
             >
-              Ver código fonte
+              {Strings.seeSourceCode}
             </a>
           ) : (
             ""
@@ -36,7 +44,7 @@ const PortfolioItem = ({
               target="_blank"
               rel="noreferrer"
             >
-              Acessar
+              {Strings.access}
             </a>
           ) : (
             ""

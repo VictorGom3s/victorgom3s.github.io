@@ -1,5 +1,6 @@
 import React from "react";
 import { css } from "@emotion/react";
+import { useTranslation } from "gatsby-plugin-react-i18next";
 
 import Container from "./Container";
 import { backgroundDarken } from "../colors";
@@ -9,10 +10,16 @@ import emailIcon from "../../static/images/ic_baseline-alternate-email.svg";
 import linkedinIcon from "../../static/images/dashicons_linkedin.svg";
 
 const Contato = () => {
+  const { t } = useTranslation();
+
+  const Strings = {
+    contact: t("header.contact"),
+  };
+
   return (
     <section id="contato" css={sectionStyle}>
       <Container>
-        <h2 className="closingTags titleH2">Contato</h2>
+        <h2 className="closingTags titleH2">{Strings.contact}</h2>
         <div className="findMe" css={findMe}>
           <div className="links" css={links}>
             <div className="icons" css={iconsGrid}>

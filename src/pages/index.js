@@ -1,4 +1,5 @@
 import React from "react";
+import { graphql } from "gatsby";
 
 import SEO from "../components/SEO";
 import Header from "../components/Header";
@@ -10,7 +11,10 @@ import Footer from "../components/Footer";
 
 const IndexPage = () => (
   <>
-    <SEO title="VictorGom3s" />
+    <SEO
+      title="VictorGom3s"
+      description={"VictorGom3s' personal portfolio website"}
+    />
     <Header />
     <Main />
     <AboutMe />
@@ -21,3 +25,17 @@ const IndexPage = () => (
 );
 
 export default IndexPage;
+
+export const query = graphql`
+  query ($language: String!) {
+    locales: allLocale(filter: { language: { eq: $language } }) {
+      edges {
+        node {
+          ns
+          data
+          language
+        }
+      }
+    }
+  }
+`;

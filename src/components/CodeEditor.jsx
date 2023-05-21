@@ -1,12 +1,31 @@
-import React from "react";
 import { css } from "@emotion/react";
+import { useI18next } from "gatsby-plugin-react-i18next";
+import React from "react";
+
 import SyntaxHighlighter from "react-syntax-highlighter";
 import { tomorrowNightEighties } from "react-syntax-highlighter/dist/esm/styles/hljs";
 
 import { secondary } from "../colors";
-import text from "../resources/aboutMeText";
+import ptText from "../resources/aboutMeText";
+import enText from "../resources/aboutMeText.en";
+import esText from "../resources/aboutMeText.es";
 
 const CodeEditor = () => {
+  const { i18n } = useI18next();
+
+  const getAboutMeText = language => {
+    switch (language) {
+      case "en":
+        return enText;
+      case "pt":
+        return ptText;
+      case "es":
+        return esText;
+      default:
+        return enText;
+    }
+  };
+
   return (
     <div css={style}>
       <div className="buttons">
@@ -25,7 +44,7 @@ const CodeEditor = () => {
           }}
           language="javascript"
         >
-          {text}
+          {getAboutMeText(i18n.language)}
         </SyntaxHighlighter>
       </div>
     </div>
