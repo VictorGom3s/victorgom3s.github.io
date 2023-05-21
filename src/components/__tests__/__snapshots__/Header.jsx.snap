@@ -57,13 +57,16 @@ exports[`<Header/> Render correctly 1`] = `
         css={
           {
             "map": undefined,
-            "name": "11w9y1g",
+            "name": "bcsvj9",
             "next": undefined,
             "styles": "
   margin: 0 auto;
   transition: 0.2s;
   &:hover {
     transform: scale(1.05);
+  }
+  @media (min-width: 600px) {
+    width: 25%;
   }
   @media (min-width: 900px) {
     margin: 0;
@@ -84,12 +87,13 @@ exports[`<Header/> Render correctly 1`] = `
         css={
           {
             "map": undefined,
-            "name": "15c9sm1",
+            "name": "7v8joc",
             "next": undefined,
             "styles": "
   display: none;
   justify-content: space-evenly;
-  width: 50%;
+  
+  flex: 1;
   a {
     position: relative;
     margin: 0 15px;
@@ -111,6 +115,8 @@ exports[`<Header/> Render correctly 1`] = `
 
   @media (min-width: 900px) {
     display: flex;
+    justify-content: center;
+    gap: 30px;
   }
 ",
             "toString": [Function],
@@ -134,22 +140,33 @@ exports[`<Header/> Render correctly 1`] = `
         </a>
       </div>
       <div
-        className="languages"
+        css={
+          {
+            "map": undefined,
+            "name": "yqi79i",
+            "next": undefined,
+            "styles": "
+  width: 25%;
+  display: flex;
+  justify-content: flex-end;
+",
+            "toString": [Function],
+          }
+        }
       >
         <select
           css={
             {
               "map": undefined,
-              "name": "8nll4a",
+              "name": "9qfhqk",
               "next": undefined,
               "styles": "
-  min-width: 100px;
   background: none;
-  border: 1px solid #FA7D09;
+  border: none;
   color: #F0EFED;
   padding: 5px 10px;
   border-radius: 5px;
-  font-size: 1rem;
+  font-size: 1.25rem;
 ",
               "toString": [Function],
             }
@@ -160,7 +177,7 @@ exports[`<Header/> Render correctly 1`] = `
           <option
             value="en"
           >
-            English
+            🇬🇧
           </option>
         </select>
       </div>
