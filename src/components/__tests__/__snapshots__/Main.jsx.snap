@@ -117,7 +117,8 @@ exports[`<Main/> Render correctly 1`] = `
               }
             }
           >
-            Olá, meu nome é 
+            main.myNameIs
+             
             <b
               css={
                 {
@@ -155,48 +156,12 @@ exports[`<Main/> Render correctly 1`] = `
               }
             }
           >
-            Eu sou um 
+            main.iAm
+             
             <b>
-              Desenvolvedor de Software
+              main.softwareDeveloper
             </b>
           </h1>
-          <div
-            className="buttons"
-            css={
-              {
-                "map": undefined,
-                "name": "6l0zp8",
-                "next": undefined,
-                "styles": "
-  display: none;
-  justify-content: space-between;
-  @media (min-width: 900px) {
-    justify-content: flex-start;
-  }
-  align-items: center;
-  align-content: center;
-  .btn-primary {
-    margin: 30px 10px 0px 0px;
-  }
-  .btn-secondary {
-    margin: 30px 0px 0px 0px;
-  }
-",
-                "toString": [Function],
-              }
-            }
-          >
-            <button
-              className="btn btn-primary"
-            >
-              Quero Contratar
-            </button>
-            <button
-              className="btn btn-secondary"
-            >
-              Preciso de um Site
-            </button>
-          </div>
         </div>
         <div
           className="illustration"
