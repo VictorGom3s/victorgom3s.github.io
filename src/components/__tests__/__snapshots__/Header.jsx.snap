@@ -75,7 +75,7 @@ exports[`<Header/> Render correctly 1`] = `
         href="/"
       >
         <img
-          alt="victorgom3s logo"
+          alt="VictorGom3s Logo"
           src="test-file-stub"
         />
       </a>
@@ -120,18 +120,49 @@ exports[`<Header/> Render correctly 1`] = `
         <a
           href="#aboutMe"
         >
-          Sobre Mim
+          header.aboutMe
         </a>
         <a
           href="#portfolio"
         >
-          Portfólio
+          header.portfolio
         </a>
         <a
           href="#contato"
         >
-          Contato
+          header.contact
         </a>
+      </div>
+      <div
+        className="languages"
+      >
+        <select
+          css={
+            {
+              "map": undefined,
+              "name": "8nll4a",
+              "next": undefined,
+              "styles": "
+  min-width: 100px;
+  background: none;
+  border: 1px solid #FA7D09;
+  color: #F0EFED;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 1rem;
+",
+              "toString": [Function],
+            }
+          }
+          onChange={[Function]}
+          value="en"
+        >
+          <option
+            value="en"
+          >
+            English
+          </option>
+        </select>
       </div>
     </nav>
   </div>
