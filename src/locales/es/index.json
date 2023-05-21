@@ -1,0 +1,24 @@
+{
+  "header": {
+    "aboutMe": "Acerca de mí",
+    "portfolio": "Portafolio",
+    "contact": "Contacto"
+  },
+  "main": {
+    "myNameIs": "Hola, mi nombre es",
+    "iAm": "Yo soy un",
+    "softwareDeveloper": "Desarrollador de Software"
+  },
+  "portfolio": {
+    "leituraOrganicaDescription": "Página de inicio y prueba de lectura para el curso de Lectura Orgánica. Desarrollado con HTML5, CSS3, SASS, JavaScript Vanilla y Parcel como bundler. La interfaz de usuario fue desarrollada por mí a través de Figma y las ilustraciones fueron tomadas de bibliotecas de código abierto.",
+    "rollingTetrisDescription": "Rolling Tetris es una variación del juego Tetris en la que, cada vez que el jugador elimina una línea que contenga una pieza especial, el tablero de Tetris se rota, poniéndose boca abajo. Junto con el juego, desarrollado con HTML5 Canvas y JavaScript, también desarrollamos una plataforma full-stack para alojar el juego.",
+    "cookiesDescription": "Catálogo digital para un negocio de venta de galletas. Desarrollado en Node.js, Express, MySQL, HTML5 y CSS3.",
+    "justAnotherTaskManagerDescription": "Lista de tareas y temporizador Pomodoro. Desarrollado en ReactJS. Se utilizaron Dexie.js para almacenar las tareas en el indexedDB del navegador y SASS como preprocesador CSS.",
+    "memoryGameDescription": "Juego de memoria temático utilizando solo HTML, CSS y JavaScript. Creado a partir de un tutorial de FreeCodeCamp.",
+    "seeSourceCode": "Ver código fuente",
+    "access": "Acceder"
+  },
+  "footer": {
+    "developedWith": "Desarrollado con 💗 por"
+  }
+}

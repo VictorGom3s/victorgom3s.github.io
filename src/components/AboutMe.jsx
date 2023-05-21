@@ -1,16 +1,23 @@
-import React from "react";
 import { css } from "@emotion/react";
+import React from "react";
+import { useTranslation } from "gatsby-plugin-react-i18next";
 
 import { backgroundDarken } from "../colors";
 import CodeEditor from "./CodeEditor";
 import Container from "./Container";
 
 const AboutMe = () => {
+  const { t } = useTranslation();
+
+  const Strings = {
+    aboutMe: t("header.aboutMe"),
+  };
+
   return (
     <section id="aboutMe" css={sectionStyle}>
       <Container>
         <div className="title">
-          <h2 className="closingTags titleH2">Sobre Mim</h2>
+          <h2 className="closingTags titleH2">{Strings.aboutMe}</h2>
           <CodeEditor />
         </div>
       </Container>

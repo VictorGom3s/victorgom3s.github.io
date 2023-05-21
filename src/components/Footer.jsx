@@ -1,15 +1,19 @@
 import React from "react";
+import { useTranslation } from "gatsby-plugin-react-i18next";
 import { css } from "@emotion/react";
 import { secondary } from "../colors";
 
 const Footer = () => {
+  const { t } = useTranslation();
+
+  const Strings = {
+    developedWith: t("footer.developedWith"),
+  };
+
   return (
     <footer css={footerStyle}>
-      Desenvolvido com{" "}
-      <span role="img" aria-label="heart emoji">
-        💗
-      </span>{" "}
-      por <a href="https://github.com/victorgom3s">VictorGom3s</a>
+      {Strings.developedWith}{" "}
+      <a href="https://github.com/victorgom3s">VictorGom3s</a>
     </footer>
   );
 };

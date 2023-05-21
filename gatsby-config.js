@@ -27,6 +27,13 @@ module.exports = {
         path: `${__dirname}/static/images`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `locale`,
+        path: `${__dirname}/src/locales`,
+      },
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
@@ -46,5 +53,29 @@ module.exports = {
     // `gatsby-plugin-offline`,
     `gatsby-plugin-emotion`,
     `gatsby-plugin-pnpm`,
+    {
+      resolve: `gatsby-plugin-react-i18next`,
+      options: {
+        localeJsonSourceName: `locale`, // name given to `gatsby-source-filesystem` plugin.
+        languages: [`en`, `es`, `pt`],
+        defaultLanguage: `en`,
+        siteUrl: `https://victorgom3s.github.io/`,
+        // if you are using trailingSlash gatsby config include it here, as well (the default is 'always')
+        trailingSlash: "always",
+        // you can pass any i18next options
+        i18nextOptions: {
+          interpolation: {
+            escapeValue: false, // not needed for react as it escapes by default
+          },
+          nsSeparator: false,
+        },
+        pages: [
+          {
+            matchPath: "/:lang",
+            getLanguageFromPath: true,
+          },
+        ],
+      },
+    },
   ],
 };

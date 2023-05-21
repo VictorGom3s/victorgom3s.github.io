@@ -1,5 +1,6 @@
 import React from "react";
 import { css } from "@emotion/react";
+import { useTranslation } from "gatsby-plugin-react-i18next";
 
 import Container from "../Container";
 import PortfolioItem from "./PortfolioItem.jsx";
@@ -12,6 +13,19 @@ import CK from "../../../static/images/cookies-1.png";
 import desafio333 from "../../../static/images/desafio333.png";
 
 const Portfolio = () => {
+  const { t } = useTranslation();
+
+  const Strings = {
+    portfolio: t("header.portfolio"),
+    leituraOrganicaDescription: t("portfolio.leituraOrganicaDescription"),
+    rollingTetrisDescription: t("portfolio.rollingTetrisDescription"),
+    cookiesDescription: t("portfolio.cookiesDescription"),
+    justAnotherTaskManagerDescription: t(
+      "portfolio.justAnotherTaskManagerDescription"
+    ),
+    memoryGameDescription: t("portfolio.memoryGameDescription"),
+  };
+
   return (
     <section id="portfolio" css={sectionStyle}>
       <Container>
@@ -20,9 +34,7 @@ const Portfolio = () => {
           <div className="itens">
             <PortfolioItem
               title={"Leitura Orgânica"}
-              text={
-                "Landing Page e Teste de leitura para o curso Leitura Orgânica. Desenvolvido com HTML5, CSS3, SASS, JavaScript Vanilla e Parcel como bundler. A UI foi desenvolvida por mim através do Figma e as ilustrações foram retiradas de bibliotecas open-source."
-              }
+              text={Strings.leituraOrganicaDescription}
               linkAcessar={"https://desafio333-leitura-organica.herokuapp.com/"}
               linkCodigo={
                 "https://github.com/VictorGom3s/leitura-organica-desafio333"
@@ -31,25 +43,19 @@ const Portfolio = () => {
             />
             <PortfolioItem
               title={"Rolling Tetris"}
-              text={
-                "Rolling Tetris é uma variação do jogo Tetris onde, cada vez que o player elimina uma linha que contenha uma peça especial, o tabuleiro do tetris é rotacionado, ficando de ponta cabeça. Em conjunto com o jogo, desenvolvido com HTML5 Canvas e JavaScript, desenvolvemos também uma plataforma full-stack para hospedar o jogo."
-              }
+              text={Strings.rollingTetrisDescription}
               img={RT}
               linkCodigo={"https://github.com/VictorGom3s/rolling-tetris"}
               reversed={true}
             />
             <PortfolioItem
               title={"Cookies.com.br"}
-              text={
-                "Plataforma de e-commerce para um negócio de venda de Cookies. Desenvolvido em Node.js, Express, MySQL, HTML5 e CSS3."
-              }
+              text={Strings.cookiesDescription}
               img={CK}
             />
             <PortfolioItem
               title={"Just Another Task Manager"}
-              text={
-                "Lista de tarefas e Pomodoro Timer. Desenvolvido em ReactJS. Foram utilizados Dexie.js para armazenar as tarefas no indexedDB do Browser, e SASS como pré-processador CSS."
-              }
+              text={Strings.justAnotherTaskManagerDescription}
               linkAcessar={"https://justanothertaskmanager.herokuapp.com/"}
               linkCodigo={
                 "https://github.com/VictorGom3s/JustAnotherTaskManager"
@@ -60,9 +66,7 @@ const Portfolio = () => {
 
             <PortfolioItem
               title={"Memory Game"}
-              text={
-                "Jogo da memória temático utilizando apenas HTML, CSS e JavaScript. Criado a partir de um tutorial do FreeCodeCamp."
-              }
+              text={Strings.memoryGameDescription}
               linkAcessar={"https://victorgom3s.github.io/linuxmemorygame/"}
               linkCodigo={"https://github.com/VictorGom3s/linuxmemorygame"}
               img={LMG}

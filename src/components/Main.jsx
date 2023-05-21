@@ -1,5 +1,6 @@
 import React from "react";
 import { css } from "@emotion/react";
+import { useTranslation } from "gatsby-plugin-react-i18next";
 
 import Container from "./Container";
 
@@ -10,6 +11,14 @@ import illustration from "../../static/images/undraw_developer_activity_bv83.svg
 import { background, secondary, primary } from "../colors";
 
 const Main = () => {
+  const { t } = useTranslation();
+
+  const Strings = {
+    myNameIs: t("main.myNameIs"),
+    iAm: t("main.iAm"),
+    softwareDeveloper: t("main.softwareDeveloper"),
+  };
+
   return (
     <section id="main" css={sectionStyle}>
       <Container>
@@ -17,17 +26,11 @@ const Main = () => {
           <div css={textWrapper}>
             <div className="textContainer" css={textContainerStyle}>
               <h4 css={h4Style}>
-                Olá, meu nome é <b css={boldText}>Victor Gomes</b>
+                {Strings.myNameIs} <b css={boldText}>Victor Gomes</b>
               </h4>
               <h1 css={h1Style}>
-                Eu sou um <b>Desenvolvedor de Software</b>
+                {Strings.iAm} <b>{Strings.softwareDeveloper}</b>
               </h1>
-              <div className="buttons" css={buttons}>
-                <button className="btn btn-primary">Quero Contratar</button>
-                <button className="btn btn-secondary">
-                  Preciso de um Site
-                </button>
-              </div>
             </div>
             <div className="illustration" css={illustrationStyle}>
               <img src={illustration} alt="Illustration" />
@@ -62,22 +65,6 @@ const Main = () => {
     </section>
   );
 };
-
-const buttons = css`
-  display: none;
-  justify-content: space-between;
-  @media (min-width: 900px) {
-    justify-content: flex-start;
-  }
-  align-items: center;
-  align-content: center;
-  .btn-primary {
-    margin: 30px 10px 0px 0px;
-  }
-  .btn-secondary {
-    margin: 30px 0px 0px 0px;
-  }
-`;
 
 const boldText = css`
   color: ${primary};
