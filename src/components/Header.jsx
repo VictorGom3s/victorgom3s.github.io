@@ -2,10 +2,10 @@ import React from "react";
 
 import { css } from "@emotion/react";
 import { Link } from "gatsby";
+import { useI18next, useTranslation } from "gatsby-plugin-react-i18next";
 import logo from "../../static/images/LOGO.svg";
-import { auxiliary, background, primary, secondary } from "../colors";
+import { background, primary, secondary } from "../colors";
 import Container from "./Container";
-import { useTranslation, useI18next } from "gatsby-plugin-react-i18next";
 
 const Header = () => {
   const { t } = useTranslation();
@@ -25,13 +25,13 @@ const Header = () => {
   const getLanguageValue = lang => {
     switch (lang) {
       case "en":
-        return "English";
+        return "🇬🇧";
       case "pt":
-        return "Português";
+        return "🇧🇷";
       case "es":
-        return "Español";
+        return "🇪🇸";
       default:
-        return "English";
+        return "🇬🇧";
     }
   };
 
@@ -68,7 +68,7 @@ const Header = () => {
             <a href="#portfolio">{Strings.portfolio}</a>
             <a href="#contato">{Strings.contact}</a>
           </div>
-          <div className="languages">
+          <div css={languagesContainer}>
             <LanguageSwitcher />
           </div>
         </nav>
@@ -83,19 +83,21 @@ const logoContainer = css`
   &:hover {
     transform: scale(1.05);
   }
+  @media (min-width: 600px) {
+    width: 25%;
+  }
   @media (min-width: 900px) {
     margin: 0;
   }
 `;
 
 const languageSwitcherStyle = css`
-  min-width: 100px;
   background: none;
-  border: 1px solid ${primary};
+  border: none;
   color: ${secondary};
   padding: 5px 10px;
   border-radius: 5px;
-  font-size: 1rem;
+  font-size: 1.25rem;
 `;
 
 const navStyle = css`
@@ -109,7 +111,8 @@ const navStyle = css`
 const linksStyle = css`
   display: none;
   justify-content: space-evenly;
-  width: 50%;
+  ${"" /* width: 50%; */}
+  flex: 1;
   a {
     position: relative;
     margin: 0 15px;
@@ -131,7 +134,15 @@ const linksStyle = css`
 
   @media (min-width: 900px) {
     display: flex;
+    justify-content: center;
+    gap: 30px;
   }
+`;
+
+const languagesContainer = css`
+  width: 25%;
+  display: flex;
+  justify-content: flex-end;
 `;
 
 export default Header;
