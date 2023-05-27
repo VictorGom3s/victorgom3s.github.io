@@ -35,7 +35,7 @@ const Portfolio = () => {
             <PortfolioItem
               title={"Leitura Orgânica"}
               text={Strings.leituraOrganicaDescription}
-              linkAcessar={"https://desafio333-leitura-organica.herokuapp.com/"}
+              linkAcessar={"https://leitura-organica-desafio333.vercel.app/"}
               linkCodigo={
                 "https://github.com/VictorGom3s/leitura-organica-desafio333"
               }
@@ -56,7 +56,7 @@ const Portfolio = () => {
             <PortfolioItem
               title={"Just Another Task Manager"}
               text={Strings.justAnotherTaskManagerDescription}
-              linkAcessar={"https://justanothertaskmanager.herokuapp.com/"}
+              linkAcessar={"https://just-another-task-manager.vercel.app/"}
               linkCodigo={
                 "https://github.com/VictorGom3s/JustAnotherTaskManager"
               }
